@@ -1,0 +1,30 @@
+<!DOCTYPE html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>TextCycle - Inbox</title>
+
+<script src="js/jquery-1.6.2.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+var page="https://www.googleapis.com/books/v1/volumes?q=9780470889268+isbn&callback=?";
+//var page="https://www.googleapis.com/books/v1/volumes?q=9780470128725+isbn&callback=?";
+
+
+$.getJSON(page,function(data) {
+	$.each(data, function(key, value) {
+		//alert(key+","+value);
+		if (key=="items"){
+			alert(value[0]["id"]);
+		}
+	});
+});
+
+});
+</script>
+
+<body>
+
+</body>
+</html>
