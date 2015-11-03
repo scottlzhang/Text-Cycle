@@ -1,0 +1,2 @@
+INDEX VERSION 1.122+C:\xampp\htdocs\textcycle\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+977245623.index
